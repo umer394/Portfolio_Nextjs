@@ -87,7 +87,7 @@ export const BentoGridItem = ({
           {id===6 && (
             
                 <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
-                  <BackgroundGradientAnimation></BackgroundGradientAnimation>
+                  {/* <BackgroundGradientAnimation></BackgroundGradientAnimation> */}
                 </div>
             
           )}
@@ -131,21 +131,21 @@ export const BentoGridItem = ({
             <div className="mt-5 relative">
               <div className={"absolute -bottom-5 right-0"}
               >
-                <Lottie options={{
+                {/* <Lottie options={{
                   loop:copied,
                   autoplay:copied,
                   animationData,
                   rendererSettings:{
                     preserveAspectRatio:'xMidYMid slice',
                   }
-                }}/>
+                }}/> */}
               </div>
               <MagicButton
               title={copied?'Email copied':'Copy my Email'}
               icon={<IoCopyOutline/>}
               position="left"
               handleClick={handleCopy}
-              otherClasses="!bg-[#161A31]"
+              otherClasses="!bg-black"
               />
             </div>
           )}

@@ -12,7 +12,7 @@ function RecentProjects() {
         <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10 '>
             {projects.map(({id,title,des,img,iconLists,link})=>(
                 <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem]  flex items-center text-white justify-center sm:w-[570px] w-[80vw]'>
-                    <PinContainer title={title} href={link} >
+                    <PinContainer  title={title} href={link} >
                         <div className='relative flex items-center sm:w-[570px] w-[80vw] overflow-hidden justify-center mb-10 sm:h-[40vh]  h-[30vh]'>
                             <div className='relative lg:rounded-3xl w-full h-full bg-[#13162d]'>
                                 <img src="/bg.png" alt="bg-img" />
